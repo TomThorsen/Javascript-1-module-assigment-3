@@ -3,19 +3,36 @@ JavaScript MA03
 Level 2
 
 1. In your own words, describe what JavaScript Code Style is.
+    Javascript codestyle is a unified set of guidelines on how to write your code. Both so it increases readability, but also
+    so that code is written in the same style from different people.
+    This can be "rules" such as always using camelcase for variables to more easily identifying them, having spaces around operators
+    so it's easier to see that they are there, ending statements with a semicolon to declare the end of a line etc.
 
 2. What is a Regular Expression?
+    A regular expression, also shortened to RegEx is an object that is used to validate the use and pattern of characters.
+    It's used for functions such as validating text input from user, for example to check that the format of an email input is input@input.input.
 
 3. What does the .random() method do?
+    The .random() method returns a "random"(nothing can truly be random) number within a specified range. Syntax: random(low, high);
 
 4. What does the .sort() method do?
+    The .sort() method sorts numbers from smallest to largest or words in alphabetical order. The syntax takes the array and an optional "count" syntax.
+    Count can be used to define the number of array elements to be sorted, for example using 4 will only sort the 4 first elements. Syntax: sort(arrayName, count);
 
 5. What does the .reverse() method do?
+    The .reverse() method simply reverses the order of an array. Syntax: reverse(arrayName);
 
 6. List two examples of bad JavaScript code.
+    Array = ["stuff","stuff2"] // No "var" to declare variable, will be defined as global. Variable should not start with capital letter. Array protected javascript name. No semicolon on end.
+
+    var notGood = 59 == "59";
+    console.log(notGood); // will output true. "==" is a non-strict comparison and will think the int 59 is the same as the string 59 and can cause problems. The strict comparison "===" should therefor be used.
 
 7. What data types can a JSON object contain?
+    A JSON object can contain strings, arrays, objects, numbers, boolean and even null.
 
 8. What is minifying JavaScript Code?
+    Minifying code basically just means removing all the unnecessary letters and parts of code to shorten it down, without changing any functionality. This is done to reduce the file-size of the scripts to make data-transfers smaller.
 
 9. What is a global variable?
+    A global variable is a variable declared outside any function. This means that all scripts and functions on the webpage will be able to use this variable, either for getting the info contained or changing it.
